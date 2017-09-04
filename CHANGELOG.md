@@ -1,7 +1,6 @@
 # Change Log
 All notable changes to the "hg-workbench-open-vscode" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-- Initial release
+## v1.0.0
+- Added context menu support for Hg Workbench
+- Added notification setting (defaults to false)

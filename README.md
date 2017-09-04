@@ -10,4 +10,4 @@ Right click on a file or folder in the `tree-view` that you want to open in Tort
 
 ## Notes
 
-- Please report problems to [github issues](https://github.com/pxgamer/hg-workbench-open-vscode/issues).
+- Please report problems to [Github issues](https://github.com/pxgamer/hg-workbench-open-vscode/issues).

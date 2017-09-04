@@ -1,0 +1,62 @@
+{
+    "name": "hg-workbench-open-vscode",
+    "displayName": "Hg Workbench Open",
+    "description": "Open Mercurial repositories in Hg Workbench.",
+    "version": "1.0.0",
+    "keywords": [
+        "hg",
+        "mercurial",
+        "Tortoise",
+        "TortoiseHg"
+    ],
+    "publisher": "pxgamer",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.TortoiseHg"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.TortoiseHg",
+                "title": "Open in TortoiseHg Workbench"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "extension.TortoiseHg",
+                    "group": "navigation"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.5.2",
+        "vscode": "^1.1.5",
+        "mocha": "^3.5.0",
+        "eslint": "^4.6.1",
+        "@types/node": "^8.0.26",
+        "@types/mocha": "^2.2.42"
+    },
+    "configuration": {
+        "type": "object",
+        "title": "Hg Workbench Open configuration",
+        "properties": {
+            "hg-workbench-open.notify": {
+                "type": "boolean",
+                "default": false,
+                "description": "Show notifications on actions."
+            }
+        }
+    }
+}

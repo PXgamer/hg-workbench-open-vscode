@@ -1,5 +1,5 @@
 {
-    "name": "hg-workbench-open-vscode",
+    "name": "hgwo",
     "displayName": "Hg Workbench Open",
     "description": "Open Mercurial repositories in Hg Workbench.",
     "version": "1.0.0",
@@ -17,46 +17,37 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.TortoiseHg"
+        "onCommand:hgwo.TortoiseHg"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.TortoiseHg",
+                "command": "hgwo.TortoiseHg",
                 "title": "Open in TortoiseHg Workbench"
             }
         ],
         "menus": {
             "explorer/context": [
                 {
-                    "command": "extension.TortoiseHg",
+                    "command": "hgwo.TortoiseHg",
                     "group": "navigation"
                 }
             ]
-        }
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.5.2",
-        "vscode": "^1.1.5",
-        "mocha": "^3.5.0",
-        "eslint": "^4.6.1",
-        "@types/node": "^8.0.26",
-        "@types/mocha": "^2.2.42"
-    },
-    "configuration": {
-        "type": "object",
-        "title": "Hg Workbench Open configuration",
-        "properties": {
-            "hg-workbench-open.notify": {
-                "type": "boolean",
-                "default": false,
-                "description": "Show notifications on actions."
+        },
+        "configuration": {
+            "title": "Hg Workbench Open",
+            "properties": {
+                "hgwo.notify": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Show notifications on actions."
+                }
             }
         }
+    },
+    "devDependencies": {
+        "vscode": "^1.1.5",
+        "eslint": "^4.6.1"
     }
 }

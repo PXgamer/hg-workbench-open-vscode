@@ -3,6 +3,7 @@
     "displayName": "Hg Workbench Open",
     "description": "Open Mercurial repositories in Hg Workbench.",
     "version": "1.1.0",
+    "license": "MIT",
     "keywords": [
         "hg",
         "mercurial",
@@ -49,5 +50,9 @@
     "devDependencies": {
         "vscode": "^1.1.5",
         "eslint": "^4.6.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PXgamer/hg-workbench-open-vscode"
     }
 }

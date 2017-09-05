@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to the "hg-workbench-open-vscode" extension will be documented in this file.
 
-## v1.0.1
+## v1.1.0
 - Renamed extension to `hgwo`
 - Added file context support
 - Corrected the configuration as it was in the wrong location

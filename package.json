@@ -2,7 +2,7 @@
     "name": "hgwo",
     "displayName": "Hg Workbench Open",
     "description": "Open Mercurial repositories in Hg Workbench.",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "license": "MIT",
     "keywords": [
         "hg",
@@ -48,8 +48,8 @@
         }
     },
     "devDependencies": {
-        "vscode": "^1.1.5",
-        "eslint": "^4.6.1"
+        "eslint": "^4.12",
+        "vscode": "^1.1"
     },
     "repository": {
         "type": "git",

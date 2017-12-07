@@ -4,6 +4,12 @@ All notable changes to `hg-workbench-open-vscode` will be documented in this fil
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## v1.1.1 - 2017-12-07
+
+### Added
+- Updated the dependencies
+- Added a LICENSE file
+
 ## v1.1.1 - 2017-09-05
 
 ### Added

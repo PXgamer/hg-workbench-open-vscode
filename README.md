@@ -11,3 +11,7 @@ Right click on a file or folder in the `tree-view` that you want to open in Tort
 ## Notes
 
 - Please report problems to [Github issues](https://github.com/pxgamer/hg-workbench-open-vscode/issues).
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

@@ -1,58 +1,58 @@
 {
-    "name": "hgwo",
-    "displayName": "Hg Workbench Open",
-    "description": "Open Mercurial repositories in Hg Workbench.",
-    "version": "1.1.2",
-    "license": "MIT",
-    "keywords": [
-        "hg",
-        "mercurial",
-        "Tortoise",
-        "TortoiseHg"
+  "name": "hgwo",
+  "displayName": "Hg Workbench Open",
+  "description": "Open Mercurial repositories in Hg Workbench.",
+  "version": "1.1.2",
+  "license": "MIT",
+  "keywords": [
+    "hg",
+    "mercurial",
+    "Tortoise",
+    "TortoiseHg"
+  ],
+  "publisher": "pxgamer",
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:hgwo.TortoiseHg"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "hgwo.TortoiseHg",
+        "title": "Open in TortoiseHg Workbench"
+      }
     ],
-    "publisher": "pxgamer",
-    "engines": {
-        "vscode": "^1.15.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:hgwo.TortoiseHg"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "hgwo.TortoiseHg",
-                "title": "Open in TortoiseHg Workbench"
-            }
-        ],
-        "menus": {
-            "explorer/context": [
-                {
-                    "command": "hgwo.TortoiseHg",
-                    "group": "navigation"
-                }
-            ]
-        },
-        "configuration": {
-            "title": "Hg Workbench Open",
-            "properties": {
-                "hgwo.notify": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Show notifications on actions."
-                }
-            }
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "hgwo.TortoiseHg",
+          "group": "navigation"
         }
+      ]
     },
-    "devDependencies": {
-        "eslint": "^4.12",
-        "vscode": "^1.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/pxgamer/hg-workbench-open-vscode"
+    "configuration": {
+      "title": "Hg Workbench Open",
+      "properties": {
+        "hgwo.notify": {
+          "type": "boolean",
+          "default": false,
+          "description": "Show notifications on actions."
+        }
+      }
     }
+  },
+  "devDependencies": {
+    "eslint": "^4.12",
+    "vscode": "^1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pxgamer/hg-workbench-open-vscode"
+  }
 }

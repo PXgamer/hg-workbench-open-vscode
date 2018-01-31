@@ -6,7 +6,9 @@ Open Mercurial repositories in Hg Workbench.
 
 With VS Code
 
-[Visual Studio Code Marketplace][link-vscode]
+```bash
+$ code --install-extension pxgamer.hgwo
+```
 
 ## Usage
 

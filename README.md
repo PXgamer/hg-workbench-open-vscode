@@ -1,5 +1,7 @@
 # hg-workbench-open-vscode
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pxgamer/hg-workbench-open-vscode.svg)](https://greenkeeper.io/)
+
 Open Mercurial repositories in Hg Workbench.
 
 ## Usage
